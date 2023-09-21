@@ -1,0 +1,175 @@
+:root {
+  /* CTAs  Focused  Active states  Links */
+  --iris: #4d5ae5;
+  /* CTAs */
+  --ocean: #404bbf;
+  /* Overlays Shadows Headings */
+  --navy-blue: #2e2f42;
+  /* Valid fields Success messages */
+  --green: #31d0aa;
+  /* Body text */
+  --slate: #434455;
+  /* Helper text Deemphasized text */
+  --light-slate: #8e8f99;
+  /* Accent colorn Hairlines Subtle backgrounds */
+  --cornflower: #e7e9fc;
+  /* Light mode backgrounds
+Light mode Dialogs/alerts */
+  --cloud: #f4f4fd;
+  /* Overlay */
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  /* Hero image background */
+  --grey: rgba(46, 47, 66, 0.7);
+  /* Header,  team card background */
+  --white: #ffffff;
+  /* Modal background */
+  --dairy: #fcfcfc;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--slate);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+.list {
+  list-style-type: none;
+}
+
+/* посилання */
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+.contacts {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--ocean);
+}
+
+/* логотип */
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  color: var(--iris);
+  text-decoration: none;
+}
+.logo span {
+  color: var(--navy-blue);
+}
+
+/* голоана навігація */
+
+.site-nav-link {
+  color: var(--navy-blue);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+
+.contacts-link {
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: var(--slate);
+}
+/* кнопки */
+.button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  text-align: center;
+  cursor: pointer;
+}
+.button.primary {
+  color: var(--white);
+  background: var(--iris);
+}
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--ocean);
+}
+
+.button.secondary {
+  color: var(--iris);
+  background-color: var(--cloud);
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--white);
+  background-color: var(--ocean);
+}
+/* герой */
+.hero {
+  background-color: var(--navy-blue);
+}
+
+.hero {
+  text-align: center;
+  color: var(--white);
+}
+
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+}
+/* секція команда */
+.team-section {
+  background-color: var(--cloud);
+}
+.team-woker {
+  background-color: var(--white);
+}
+/* заголовки 2 */
+.section-title {
+  color: var(--navy-blue);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+/* заголовки 3 */
+.list-title {
+  color: var(--navy-blue);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+}
+/* заголовки 4 */
+.list-text {
+  letter-spacing: 0.32px;
+  line-height: 1.5;
+  color: var(--slate);
+}
+
+/* футер */
+
+.footer {
+  background-color: var(--navy-blue);
+  color: var(--cloud);
+}
+
+.footer-text {
+  /* Body */
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+.footer .logo-studio {
+  color: var(--cloud);
+}
