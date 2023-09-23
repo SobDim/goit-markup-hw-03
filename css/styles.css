@@ -25,6 +25,86 @@ Light mode Dialogs/alerts */
   /* Modal background */
   --dairy: #fcfcfc;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+.container {
+  display: flex;
+  max-width: 1440px;
+  padding-left: 156px;
+  padding-right: 156px;
+  margin-left: 0;
+  margin-right: 0;
+
+  /* width: 1440px; Ширина 
+  «контейнера» відповідає макету і дорівнює 1158px. */
+}
+.header .container {
+  justify-content: space-between;
+  border-bottom: 1px solid var(--cornflower);
+}
+.nav {
+  display: flex;
+  align-items: baseline;
+}
+.site-nav {
+  display: flex;
+  gap: 40px;
+  padding-left: 76px;
+}
+.list.address {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.list-item {
+  display: flex;
+}
+/* 
+Визнач ширину та падінги для контейнера та пропиши їх у CSS-файлі: 
+.container { 
+max-width: 
+padding-left:  
+padding-right:  
+margin-left:  
+margin-right:  
+}
+В HTML-документі огорни контент всередині кожної секції, а також хедера та футера у div із класом container
+
+
+
+*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 body {
   background-color: var(--white);
