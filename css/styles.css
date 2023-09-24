@@ -185,6 +185,8 @@ FOOTER
   display: inline-block;
   margin-bottom: 16px;
 }
+
+/* PORTFOLIO */
 .container.buttons {
   flex-direction: column;
 }
@@ -224,6 +226,7 @@ FOOTER
 .examp-cont {
   padding: 32px 16px;
   border: 1px solid var(--cornflower);
+  border-top: none;
 }
 
 .examp-cont h2 {
