@@ -25,27 +25,32 @@ Light mode Dialogs/alerts */
   /* Modal background */
   --dairy: #fcfcfc;
 }
-*,
-*::before,
-*::after {
+/* скидання стилів і приховування заголовків */
+
+html {
   box-sizing: border-box;
 }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 h1,
 h2,
 h3,
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
-
 ul {
-  margin-top: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
   display: block;
 }
+/* флекс контейнери */
 .container {
   display: flex;
   max-width: 1440px;
@@ -53,46 +58,37 @@ img {
   padding-right: 156px;
   margin-left: 0;
   margin-right: 0;
-
-  /* width: 1440px; Ширина 
-  «контейнера» відповідає макету і дорівнює 1158px. */
 }
 .header .container {
   justify-content: space-between;
+  border: 4px solid red;
   border-bottom: 1px solid var(--cornflower);
 }
+
 .nav {
   display: flex;
-  align-items: baseline;
-}
-.site-nav {
-  display: flex;
-  gap: 40px;
-  padding-left: 76px;
-}
-.list.address {
-  display: flex;
-  gap: 40px;
   align-items: center;
 }
-.list-item {
+
+.header .flex-list {
   display: flex;
+  gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-left: 76px;
 }
-/* 
-Визнач ширину та падінги для контейнера та пропиши їх у CSS-файлі: 
-.container { 
-max-width: 
-padding-left:  
-padding-right:  
-margin-left:  
-margin-right:  
+.nav .link {
+  display: block;
 }
-В HTML-документі огорни контент всередині кожної секції, а також хедера та футера у div із класом container
 
+/* герой */
 
-
-*/
-
+.hero .container {
+  flex-direction: row;
+}
+.hero-title {
+  padding-top: 188px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -106,13 +102,8 @@ margin-right:
   overflow: hidden;
 }
 
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+.section:not(:first-child) {
+  padding-top: 120px;
 }
 
 body {
@@ -120,7 +111,10 @@ body {
   color: var(--slate);
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
+
 .list {
   list-style-type: none;
 }
