@@ -59,11 +59,17 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* ХЕДЕР */
 .header .container {
   justify-content: space-between;
+}
+.header {
   border-bottom: 1px solid var(--cornflower);
 }
-
+.logo.link {
+  margin-right: 76px;
+}
 .nav {
   display: flex;
   align-items: center;
@@ -74,101 +80,154 @@ img {
   gap: 40px;
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-left: 76px;
-}
-.nav .link {
-  display: block;
 }
 
-/* герой */
+.nav.link {
+  padding: 24px 0;
+}
 
+/* ГЕРОЙ */
+.hero.section {
+  padding: 188px 0;
+}
 .hero .container {
   flex-direction: column;
   align-items: center;
-  padding: 188px 0;
 }
 .hero-title {
   padding-bottom: 48px;
+  max-width: 496px;
 }
 .button.primary {
-  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
+
+/* Друга секцыя */
+.feature.section {
+  padding: 120px 0;
+}
+.feature-item .list-title {
+  margin-bottom: 8px;
+  padding-top: 32px;
+}
+
 .feature-list {
   display: flex;
   gap: 24px;
 }
-.feature .container {
-  padding-top: 120px;
+.feature-item {
+  width: calc((100%-24px * 3) / 4);
 }
-.feature h2 {
-  padding-bottom: 8px;
+/* SECTION3 */
+.products.section {
+  padding-bottom: 120px;
 }
 .products .section-title,
 .team-section .section-title {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .products .container {
   flex-direction: column;
-  padding: 120px 0;
 }
 
 .products-list {
   display: flex;
   gap: 24px;
 }
+.products-item {
+  width: calc((100% - 48px) / 3);
+}
+/* 
+section 4
+ */
+.team-section {
+  padding: 120px 0;
+}
 .team-section .container {
   flex-direction: column;
-  padding: 120px 0;
 }
 .team-list {
   display: flex;
   gap: 24px;
-  justify-content: center;
 }
-.team-woker {
+.team-worker {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: calc((100% - 3 * 24px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
-.list-title {
-  padding-top: 32px;
+
+.name-pos {
+  padding: 32px 0;
+}
+.name-pos .list-title {
+  text-align: center;
   padding-bottom: 8px;
 }
-.list-text {
-  padding-bottom: 32px;
+
+.name-pos .list-text {
+  text-align: center;
+}
+/*
+
+FOOTER
+ */
+.footer {
+  padding: 100px 0;
 }
 .footer .container {
   flex-direction: column;
-  padding-top: 101.5px;
-  padding-bottom: 100px;
 }
 .footer .logo {
-  padding-bottom: 17.5px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.container.buttons {
+  flex-direction: column;
+}
+.section.filter {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 .button-list {
   display: flex;
   flex-direction: row;
   gap: 24px;
-  padding-top: 96px;
-  padding-bottom: 76px;
+  justify-content: center;
+  margin-bottom: 72px;
 }
 .secondary.button {
   padding: 12px 24px;
+  border: 1px solid var(--cornflower);
+}
+.secondary.button:active,
+.secondary.button:focus {
+  border: 1px solid transparent;
 }
 
-.container.button {
+.container.buttons {
   justify-content: center;
 }
-.examples .list {
+.examples-list {
   display: flex;
   flex-wrap: wrap;
   row-gap: 38px;
   column-gap: 24px;
   padding-bottom: 120px;
 }
-.examples li {
+.examples-list li {
   width: calc((100% - 48px) / 3);
   border: 1px solid var(--cornflower);
+}
+.examp-cont {
+  padding: 32px 16px;
+}
+
+.examp-cont h2 {
+  margin-bottom: 8px;
 }
 
 .visually-hidden {
@@ -250,6 +309,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.64px;
   text-align: center;
+  border-radius: 4px;
   cursor: pointer;
 }
 .button.primary {
@@ -291,7 +351,7 @@ body {
 .team-section {
   background-color: var(--cloud);
 }
-.team-woker {
+.team-worker {
   background-color: var(--white);
 }
 /* заголовки 2 */
