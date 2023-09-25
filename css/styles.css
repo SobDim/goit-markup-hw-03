@@ -123,8 +123,12 @@ body {
   text-decoration: none;
   margin-right: 76px;
 }
-.logo-header span {
+
+.header .logo-studio {
   color: var(--navy-blue);
+}
+.footer .logo-studio {
+  color: var(--cloud);
 }
 
 .nav {
@@ -285,9 +289,7 @@ FOOTER
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
-.footer .logo-studio {
-  color: var(--cloud);
-}
+/*  */
 /* PORTFOLIO */
 .container.buttons {
   flex-direction: column;
