@@ -269,7 +269,7 @@ FOOTER
  */
 
 .footer .container {
-  flex-direction: column;
+  display: block;
 }
 .footer-logo {
   display: inline-block;
